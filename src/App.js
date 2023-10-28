@@ -1,24 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import LaunchPage from './components/LaunchPage/LaunchPage';
+import { Route, Routes } from 'react-router-dom';
+import LiveCard from './components/LiveCard/LiveCard';
+import NewModule from './components/NewMoudulePage/NewModule';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <>
+    <Routes>
+      <Route path='/' element={ <LaunchPage />} />
+      <Route path='/live' element={<LiveCard />} />
+      <Route path='/new-module' element={<NewModule />} />
+    </Routes>
+   </>
   );
 }
 

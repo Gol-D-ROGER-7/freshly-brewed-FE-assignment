@@ -1,0 +1,52 @@
+.app {
+    background-color: #000;
+}
+
+.logoo {
+    /* padding: 3.4vw 0 2vw 4vw; */
+}
+.logoo span {
+    background-color: #fff;
+    color: #000;
+}
+
+.logoo h1 {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    letter-spacing: .1vw;
+}
+
+.nav {
+    padding: 0 50px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+}
+
+.p-img {
+    width: 50px;
+    height: 50px;
+}
+@media (max-width: 600px ) {
+    .nav {
+        background-color: #2A2A2A;
+        height: 70px;
+    }
+}
+@media (max-width: 900px) {
+    .nav {
+
+        padding: 10px 12px;
+    }
+    .logoo {
+        padding-left: 10px;
+        font-size: 2vw;
+    }
+    .p-img {
+        width: 30px;
+        height: 30px;
+    }
+}
